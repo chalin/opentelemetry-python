@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1644338223053,
+  "lastUpdate": 1644338227206,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "hakon@aamdal.com",
-            "name": "Håkon Åmdal",
-            "username": "hawkaa"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "46c6eb58b5ae25ca5798073c62e5d167811924c8",
-          "message": "Add \"Typing :: Typed\" tags to all packages with py.types (#1798)\n\nPypi defines a typed classifer (https://pypi.org/classifiers/) that we can use\r\nfor all packages that contain types and the py.types file.",
-          "timestamp": "2021-04-28T16:02:01-07:00",
-          "tree_id": "c4b04c347c4d05081b14a2080bb63802347bbe3b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46c6eb58b5ae25ca5798073c62e5d167811924c8"
-        },
-        "date": 1619651026977,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2648.4691854340526,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00006181783861814503",
-            "extra": "mean: 377.5766036847855 usec\nrounds: 217"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3627.5486436644974,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009145851462105711",
-            "extra": "mean: 275.6682537521576 usec\nrounds: 5663"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008372924470768358",
             "extra": "mean: 166.34470374307085 usec\nrounds: 7507"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd9862aee1ef305fca39879931c92429d57106d6",
+          "message": "Update opentelemetry-sdk min compatible version (#2442)",
+          "timestamp": "2022-02-06T01:04:17+05:30",
+          "tree_id": "b48be286ed44d6a2deba6f08919f283442a5c3c4",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/fd9862aee1ef305fca39879931c92429d57106d6"
+        },
+        "date": 1644338211308,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4249.350426661797,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000057781882596124445",
+            "extra": "mean: 235.33008568219674 usec\nrounds: 1669"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 8582.533300278748,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006544153447904721",
+            "extra": "mean: 116.51571453471918 usec\nrounds: 9728"
           }
         ]
       }
