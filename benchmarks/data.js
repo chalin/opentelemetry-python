@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1644409076353,
+  "lastUpdate": 1644409079904,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66166,6 +66166,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.73465092588069e-7",
             "extra": "mean: 3.517934421518707 usec\nrounds: 66226"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d5868fa3d0557662cb073bc075e59d62121493ef",
+          "message": "[website_docs] Remove folder (#2452)",
+          "timestamp": "2022-02-08T17:51:40-06:00",
+          "tree_id": "ee9e0a1db540496495ec1b3398f647ba00633a51",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/d5868fa3d0557662cb073bc075e59d62121493ef"
+        },
+        "date": 1644409063082,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 133944.1444607509,
+            "unit": "iter/sec",
+            "range": "stddev: 3.920644778244005e-7",
+            "extra": "mean: 7.465798553762281 usec\nrounds: 12723"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 249487.65793999514,
+            "unit": "iter/sec",
+            "range": "stddev: 2.386938352906357e-7",
+            "extra": "mean: 4.008214307100163 usec\nrounds: 73530"
           }
         ]
       }
