@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1645039389243,
+  "lastUpdate": 1645039396395,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37884,44 +37884,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d598ab434be3e69207dd359fc6ee5115252df0ee",
-          "message": "Explain usage of --noreload (#1795)",
-          "timestamp": "2021-04-30T10:04:15-07:00",
-          "tree_id": "2f7fd9f3fbce0180f1c6627f392693a4d203a677",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d598ab434be3e69207dd359fc6ee5115252df0ee"
-        },
-        "date": 1619802367768,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2151.154301038869,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00006263293365164282",
-            "extra": "mean: 464.86669948179184 usec\nrounds: 193"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3172.7909395538554,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009896190355236096",
-            "extra": "mean: 315.1799217318163 usec\nrounds: 5890"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "de8a47405ed21e2f5921f13dfe05bc8ede90790b",
           "message": "Add example for Django with auto instrumentation (#1803)",
           "timestamp": "2021-04-30T16:14:30-07:00",
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006404821559180286",
             "extra": "mean: 128.95074983396717 usec\nrounds: 9042"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ec3053efd835d1776112447808712ba52f9c70ad",
+          "message": "Merge Asynchronous and Synchronous sum aggregations (#2379)\n\n* Merge Asynchronous and Synchronous sum aggregations\r\n\r\nFixes #2353\r\n\r\n* Don't use None for self._value\r\n\r\n* Remove temporality check from sum aggregate\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/aggregation.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Add cumulative test cases\r\n\r\n* Fix lint\r\n\r\n* Set value to None\r\n\r\nThis is done in order to identify the situation when aggregate has not\r\nbeen called before collect is.\r\n\r\n* Refactor collect\r\n\r\n* Fix initial value\r\n\r\n* Update opentelemetry-sdk/tests/metrics/test_aggregation.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Undo changes to lastvalueaggrgation\r\n\r\n* Fix test case\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-02-11T14:24:38-06:00",
+          "tree_id": "d91662e38841805bd0a590ff0366f782624d8868",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/ec3053efd835d1776112447808712ba52f9c70ad"
+        },
+        "date": 1645039378639,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3731.430551826758,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000063493718575926304",
+            "extra": "mean: 267.99373219218575 usec\nrounds: 1460"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7424.35803272681,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006682070137090576",
+            "extra": "mean: 134.69178016361383 usec\nrounds: 8197"
           }
         ]
       }
