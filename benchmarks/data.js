@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646181556593,
+  "lastUpdate": 1646181609733,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67044,6 +67044,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006499964041086883",
             "extra": "mean: 124.50237108040311 usec\nrounds: 8866"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6bb3eceb93ce302c958874f03d1c9a9daabe28d2",
+          "message": "Bump mypy to 0.931 (#2494)",
+          "timestamp": "2022-03-01T14:02:58-08:00",
+          "tree_id": "72756271ce80e3d1797b79adc7124c8a7eced7e9",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/6bb3eceb93ce302c958874f03d1c9a9daabe28d2"
+        },
+        "date": 1646181589803,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3350.6400367825327,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018008620379509917",
+            "extra": "mean: 298.4504420117461 usec\nrounds: 1371"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6753.786474567692,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007770651524219071",
+            "extra": "mean: 148.06508967460505 usec\nrounds: 7806"
           }
         ]
       }
