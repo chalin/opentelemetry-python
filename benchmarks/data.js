@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646181707786,
+  "lastUpdate": 1646181722468,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64484,6 +64484,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014910411045252121",
             "extra": "mean: 49.014230935765106 usec\nrounds: 6006"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6bb3eceb93ce302c958874f03d1c9a9daabe28d2",
+          "message": "Bump mypy to 0.931 (#2494)",
+          "timestamp": "2022-03-01T14:02:58-08:00",
+          "tree_id": "72756271ce80e3d1797b79adc7124c8a7eced7e9",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/6bb3eceb93ce302c958874f03d1c9a9daabe28d2"
+        },
+        "date": 1646181704690,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28455.65499437595,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015018942518851776",
+            "extra": "mean: 35.142399645962904 usec\nrounds: 5082"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20700.946212088595,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021534135585714447",
+            "extra": "mean: 48.30697059712355 usec\nrounds: 6632"
           }
         ]
       }
