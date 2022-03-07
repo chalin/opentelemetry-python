@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646688968866,
+  "lastUpdate": 1646688983463,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cc519287703e861f030874b22a3074bb2a596a9f",
-          "message": "fix otlp grpc exporter bug when no scheme is passed in (#1806)",
-          "timestamp": "2021-05-04T11:28:33-07:00",
-          "tree_id": "57d5b944e0b953daa79cb83aab52277c8ad78218",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc519287703e861f030874b22a3074bb2a596a9f"
-        },
-        "date": 1620152958269,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 89458.67569845874,
-            "unit": "iter/sec",
-            "range": "stddev: 4.928746031113164e-7",
-            "extra": "mean: 11.178345668459617 usec\nrounds: 14025"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 158115.10583238018,
-            "unit": "iter/sec",
-            "range": "stddev: 3.042864200464084e-7",
-            "extra": "mean: 6.324506407756591 usec\nrounds: 56494"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 8.85342760881242e-7",
             "extra": "mean: 4.559895945367776 usec\nrounds: 62890"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "061e1290fee901814fb5f4358160026bae6c44a5",
+          "message": "[docs] Remove / adjusted auto-instr and distro pages since they've moved (#2498)",
+          "timestamp": "2022-03-07T11:17:56-08:00",
+          "tree_id": "8065cf3363e3b27d27fc4aa2307cc5c423542fc0",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/061e1290fee901814fb5f4358160026bae6c44a5"
+        },
+        "date": 1646688965095,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 98361.18442328286,
+            "unit": "iter/sec",
+            "range": "stddev: 4.269151109932825e-7",
+            "extra": "mean: 10.166612021431618 usec\nrounds: 11779"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 194095.69311913836,
+            "unit": "iter/sec",
+            "range": "stddev: 3.3136223111845133e-7",
+            "extra": "mean: 5.15209783344439 usec\nrounds: 59172"
           }
         ]
       }
