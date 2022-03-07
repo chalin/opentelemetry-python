@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646689428198,
+  "lastUpdate": 1646689456724,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67190,6 +67190,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000047389916824028344",
             "extra": "mean: 1.2524654757956748 usec\nrounds: 92593"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "061e1290fee901814fb5f4358160026bae6c44a5",
+          "message": "[docs] Remove / adjusted auto-instr and distro pages since they've moved (#2498)",
+          "timestamp": "2022-03-07T11:17:56-08:00",
+          "tree_id": "8065cf3363e3b27d27fc4aa2307cc5c423542fc0",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/061e1290fee901814fb5f4358160026bae6c44a5"
+        },
+        "date": 1646689433723,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 484950.08824074536,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004731116744987126",
+            "extra": "mean: 2.0620678792485556 usec\nrounds: 58140"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 862913.9444661145,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000031779563342777807",
+            "extra": "mean: 1.1588641096984311 usec\nrounds: 99010"
           }
         ]
       }
