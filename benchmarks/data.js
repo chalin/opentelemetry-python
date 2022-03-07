@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646689144607,
+  "lastUpdate": 1646689162414,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64636,6 +64636,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001274819410065479",
             "extra": "mean: 48.357162075780764 usec\nrounds: 6571"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "061e1290fee901814fb5f4358160026bae6c44a5",
+          "message": "[docs] Remove / adjusted auto-instr and distro pages since they've moved (#2498)",
+          "timestamp": "2022-03-07T11:17:56-08:00",
+          "tree_id": "8065cf3363e3b27d27fc4aa2307cc5c423542fc0",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/061e1290fee901814fb5f4358160026bae6c44a5"
+        },
+        "date": 1646689142571,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29132.995462493796,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002325443447810624",
+            "extra": "mean: 34.32534087637549 usec\nrounds: 6231"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20309.092593952984,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002749232815248461",
+            "extra": "mean: 49.23902903952238 usec\nrounds: 8058"
           }
         ]
       }
