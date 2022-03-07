@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646689016275,
+  "lastUpdate": 1646689060661,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67728,6 +67728,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007293700953638842",
             "extra": "mean: 168.90386680616302 usec\nrounds: 8131"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "061e1290fee901814fb5f4358160026bae6c44a5",
+          "message": "[docs] Remove / adjusted auto-instr and distro pages since they've moved (#2498)",
+          "timestamp": "2022-03-07T11:17:56-08:00",
+          "tree_id": "8065cf3363e3b27d27fc4aa2307cc5c423542fc0",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/061e1290fee901814fb5f4358160026bae6c44a5"
+        },
+        "date": 1646689040932,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3915.997628820256,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004779781429370224",
+            "extra": "mean: 255.3627695380558 usec\nrounds: 1753"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7834.418990586242,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006477210801160829",
+            "extra": "mean: 127.64188399951416 usec\nrounds: 8681"
           }
         ]
       }
