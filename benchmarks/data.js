@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646872518057,
+  "lastUpdate": 1646872572660,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64026,6 +64026,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014298664768257316",
             "extra": "mean: 69.26886624052939 usec\nrounds: 5166"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "290d7b51799dde183913bdd395e90a171cc185ab",
+          "message": "Reset async instrumentation aggregations each collection interval (#2510)\n\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-03-09T12:35:12-06:00",
+          "tree_id": "f4fc27932815d031dceca530e868212341c49008",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/290d7b51799dde183913bdd395e90a171cc185ab"
+        },
+        "date": 1646872554542,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21218.364430287205,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010757462730110857",
+            "extra": "mean: 47.12898599161558 usec\nrounds: 4069"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14576.865174199804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016712480749956367",
+            "extra": "mean: 68.60185561501531 usec\nrounds: 4862"
           }
         ]
       }
