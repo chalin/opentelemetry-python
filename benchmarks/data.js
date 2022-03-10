@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646872650628,
+  "lastUpdate": 1646872682594,
   "repoUrl": "https://github.com/chalin/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "4fd46819bd7550d201a2642b962ccc38018ec123",
-          "message": "Added `eachdist.py format` command (#1812)",
-          "timestamp": "2021-05-05T15:36:45-07:00",
-          "tree_id": "0dcacf430ab59122417d6428105ea5af813b4f7c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fd46819bd7550d201a2642b962ccc38018ec123"
-        },
-        "date": 1620254256757,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 84021.08126520462,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000007060170664822497",
-            "extra": "mean: 11.901774946737408 usec\nrounds: 12166"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 173102.86861499358,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000010207297839903816",
-            "extra": "mean: 5.776911775067969 usec\nrounds: 59881"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "hairmare@purplehaze.ch",
             "name": "Lucas Bickel",
             "username": "hairmare"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.456149833314403e-7",
             "extra": "mean: 4.09996306820489 usec\nrounds: 71429"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "290d7b51799dde183913bdd395e90a171cc185ab",
+          "message": "Reset async instrumentation aggregations each collection interval (#2510)\n\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-03-09T12:35:12-06:00",
+          "tree_id": "f4fc27932815d031dceca530e868212341c49008",
+          "url": "https://github.com/chalin/opentelemetry-python/commit/290d7b51799dde183913bdd395e90a171cc185ab"
+        },
+        "date": 1646872661109,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 78612.63725882531,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020442704832988806",
+            "extra": "mean: 12.720601100146105 usec\nrounds: 10905"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 191916.51299657332,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009927548711844851",
+            "extra": "mean: 5.210599048440688 usec\nrounds: 65786"
           }
         ]
       }
